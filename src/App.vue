@@ -21,7 +21,6 @@ export default {
 			axios.get(this.store.apiUrl).then(risultato => {
 				// v. anche risultato.data.info 
 				this.store.personaggi = risultato.data.results;
-				this.page++;
 			});
 		},
 	}
