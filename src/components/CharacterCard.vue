@@ -1,8 +1,13 @@
 <script>
+import register from "../debug"
+
 export default {
     name: "CharacterCard",
     props: {
         info: Object
+    },
+    mounted() {
+        register(this);
     }
 }
 </script>

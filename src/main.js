@@ -14,6 +14,7 @@ import { faHome } from '@fortawesome/free-solid-svg-icons'
 /* add icons to the library */
 library.add(faHome);
 
-createApp(App)
+window.vue = {};
+window.vue.App = createApp(App)
     .component('font-awesome-icon', FontAwesomeIcon)
-    .mount('#app')
+    .mount('#app');
