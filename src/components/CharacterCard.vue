@@ -22,7 +22,9 @@ export default {
     </div>
 </template>
 
-<style scoped>
+<style lang="scss" scoped>
+@use "../styles/partials/_variables.scss" as *;
+
 .card-wrapper {
     padding: 1rem;
     width: 50%;
@@ -30,7 +32,7 @@ export default {
 
 .card {
     padding: 1rem;
-    background: orangered;
+    background: $themeColorAccent;
     color: white;
 }
 

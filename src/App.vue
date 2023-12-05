@@ -52,12 +52,23 @@ export default {
 	</main>
 </template>
 
-<style scoped>
+<style lang="scss">
+@use './styles/general.scss';
+</style>
+
+<style scoped lang="scss">
+// @use './styles/partials/variables' as *;
+
 main {
 	width: 80%;
 	margin: 0 auto;
 
 	display: flex;
 	flex-wrap: wrap;
+	// background: $themeColorDark;
+
+	p {
+		background: yellow;
+	}
 }
 </style>
